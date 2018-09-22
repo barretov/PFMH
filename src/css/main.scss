@@ -1,0 +1,132 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+#presentation {
+    background-image: url('../img/paris.svg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    overflow: hidden;
+    color: rgb(80, 80, 80);
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+#banner-text {
+    color: gray;
+}
+
+.particles {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.bg-light-gray {
+    background-color: #fbf8f8;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.font-shadow-white {
+     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.br0 {
+    border-radius: 0px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.scroll{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+.scroll .mouse{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border: 3px solid #2E2E2E;
+    border-radius: 20px;
+}
+
+.scroll .wheel{
+    width: 4px;
+    height: 9px;
+    top: 10px;
+    left: 50%;
+    position: absolute;
+    background: #2E2E2E;
+    display: block;
+    border-radius: 50%;
+    margin-left: -2px;
+    animation-name: scroll-wheel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll-wheel{
+    from{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    to{
+        transform: translate3d(0, 10px, 0);
+        opacity: 0;
+    }
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    text-decoration: rgb(23, 162, 184) solid underline;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.hidden {
+    color: transparent;
+}
+
+.hidden-right {
+    display: none;
+}
+
+.bg-tower {
+    background-image: url('../img/tower.png');
+    background-position: right;
+    background-repeat: repeat-x;
+}
+
+.f20 {
+    font-size: 25px;
+}

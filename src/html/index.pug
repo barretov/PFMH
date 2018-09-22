@@ -1,0 +1,153 @@
+extends ../templates/default.pug
+block content
+    include ../includes/topmenu.pug
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <a href="https://www.freepik.com/free-vector/light-blue-skyline-of-paris_1933726.htm">Designed by Freepik</a>
+
+    div
+        div#presentation.container-fluid.full-height
+            div.scroll
+                div.mouse
+                    div.wheel
+
+            canvas.particles
+
+            div#banner-text.col-xs-12.col-sm-12.col-md-12.col-lg-12.text-center
+                p.display-4.text-center.mb-4.teste Marcos Henrique
+                h5.text-center Professor
+                hr.col-sm-6.offset-sm-3
+                h1.text-center Curso de Francês
+
+        div#about.container-fluid.full-height.pt-5.bg-tower
+            div.container
+                div.row
+                    div.col-xs-12.col-sm-12
+                        h1#animate-about.hidden.text-center.float-left Sobre
+
+                    div.col-xs-12.col-sm-6.pt-5.text-justify
+                        h5 Lecionando desde 1999, venho acumulando experiência no ensino da língua francesa. Fui professor de francês em escolas de línguas como Celtic, IIC - Instituto de Idiomas Cidade e Diplomata.
+                        h5.mt-5 Minha experiência na língua engloba a participação em cursos, conferências, palestras, ministração de aulas, realização de entrevistas e a vivência em viagens onde pude praticar a língua no dia a dia.
+                        a(href="#experience") leia mais...
+
+                        h2.pt-5 Aulas com foco específico
+                        h5: ul
+                                li Viagens
+                                li Concursos
+                                li Entrevistas
+                                li Provas do DELF / DALF
+                                li Especializações em países francófonos
+                        a(href="#methodology") leia mais...
+
+                    div#animate-profile.col-xs-12.col-sm-6.hidden-right
+                        img.mx-auto.d-block.mt-5.img-responsive(src="img/pfmh.jpg")
+
+        div#differentials.container-fluid.bg-light-gray
+            div.container
+                h1#animate-diff.hidden.text-center.pt-5 Diferenciais
+                div.row.text-center.pb-5
+                    div.col-xs-12.col-sm-12.col-md-4.pt-5
+                        img(src="img/responsive.svg" width="200" height="200")
+                        h2.mt-3.text-info Flexibilidade
+                        h5 Onde você estiver poderá fazer suas aulas de francês a distância, pela internet
+
+                    div.col-xs-12.col-sm-12.col-md-4.pt-5
+                        img(src="img/innovation.svg" width="200" height="200")
+                        h2.mt-3.text-info Inovação
+                        h5 Para quem quer estudar história geral e do Brasil em francês, foi desenvolvido um material específico para este tema
+
+                    div.col-xs-12.col-sm-12.col-md-4.pt-5
+                        img(src="img/culture.svg" width="200" height="200")
+                        h2.mt-3.text-info Cultura
+                        h5 Estude através da cultura de outros países e aprenda mais que uma língua
+
+        div#experience.container-fluid.pt-5.pb-5.bg-tower
+            div.container
+                h1#animate-exp.hidden.pb-5 Experiência
+                h5 Professor desde 1999
+                h5 Professor de francês nos seguintes cursos
+                    ul.mt-3
+                        li IIC Instituto Idiomas Cidade – Brasília/DF
+                        li Curso DIPLOMATA – Brasília/DF
+                        li HI Idiomas – Brasília/DF
+                        li CELTIC – Brasília/DF
+                        li CAIC – Valparaíso Goiás/GO - Formação de oficina de língua estrangeira
+                h2.pt-5 Formação
+
+                h5: ul
+                    li Graduado em letras - Francês
+                    li DEUG NANCY I, II e III (língua, literatura e civilização francesa)
+
+                h5.pt-5 Cursos de aperfeiçoamentos
+                    ul.mt-3
+                        li DALF
+                        li DELF 1
+                        li DELF 2
+                        li Tradução
+                        li Cours de perfectionnement 1 CP1
+                        li Cours de perfectionnement 2 CP2
+                        li Curso de desenvolvimento sustentável pela Universidade de LAVAL – Canadá
+                        li Curso de Francês - Cultura Francesa – Fortaleza/CE (Extensão da Universidade Federal do Ceará)
+
+        div#methodology.container-fluid.full-height.bg-light-gray.pt-5
+            div.container
+                h1#animate-method.pb-5.hidden Metodologia
+
+                h5 Áudios e vídeos didáticos.
+                h5 Exercícios de áudio com simulados de nível de DELF e DALF.
+                h5 Apostilas desenvolvidas pelo professor, direcionadas às necessidades de cada aluno.
+                h5 Dinâmica de entrevista direcionada para a prova do TCFq ou para candidatos que querem aprender a língua francesa de forma rápida e precisa, com o objetivo de obter uma boa comunicação.
+
+                h2.pt-5 Estrutura do curso
+                h5 Aulas individuais ou em grupo com até quatro alunos.
+                h5 Aulas a distância pela internet.
+                h5.mt-3 O curso compreende os seguintes níveis
+                    ul.mt-3
+                        li Básico
+                        li Intermediário
+                        li Avançado
+                        li Conversação
+
+                h5 O material didático é atual e diversificado tornando a aula dinâmica e eficiente.
+
+                h2.pt-5 Aulas inovadoras
+                h5.pb-5 Para quem quer estudar história geral e do Brasil em francês, foi desenvolvido um material específico para este tema, com base nos seguintes livros.
+                    ul.mt-3
+                        li Histoire lycée (Pierre Miquel).
+                        li Chronologie de L'historie de France.
+                        li Max Gallo (Les clés de l'histoire contemporaine).
+                        li Histoire du Brésil contemporain XIXe - XXe siècles.
+                        li Petit Larousse de l'histoire du Monde en 7.000 dates.
+
+        div#contact.container-fluid.bg-tower(style="background-position: center")
+            div.container.pt-5.pb-5
+                div.row
+                    div.col-xs-12.col-sm-12.col-md-6
+                        h2#animate-contact-title.hidden Prof. Marcos Henrique
+                        h4#animate-contact-sub-title.hidden Curso de Francês
+
+                        h5: ul
+                            li Concursos
+                            li Entrevistas
+                            li Provas DELF / DALF
+                            li Viagens com dicas de pontos turísticos
+                            li Especializações em países francófonos
+
+                    div.col-xs-12.col-sm-12.col-md-6.mt-4.pt-3
+                        table
+                            tr
+                                td.text-center: h5: i.f25.fa.fa-map-marker &nbsp;
+                                td: h5 Brasília - DF
+                            tr
+                                td.text-center: h5: i.f25.fa.fa-skype &nbsp;
+                                td: h5 mhenrique131
+                            tr
+                                td.text-center: h5: i.fa.fa-envelope &nbsp;
+                                td: h5 <a href="mailto:prof.fr.marcoshenrique@gmail.com">prof.fr.marcoshenrique@gmail.com</a> <br/>
+                            tr
+                                td.text-center: h5: i.f25.fa.fa-phone &nbsp;
+                                td: h5 + 55 61 99261.7539 <i class="fa fa-whatsapp"></i>
+                            tr
+                                td.text-center: h5: i.f25.fa.fa-facebook &nbsp;
+                                td: h5 profmarcoshenrique
