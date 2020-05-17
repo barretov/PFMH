@@ -55,19 +55,15 @@ $(document).ready(() => {
         $('#animate-contact-title').addClass('animated fadeInLeft');
     }, {offset: '90%'});
 
-    document.getElementById('animate-contact-sub-title').waypoint(() => {
-
-    })
-
     $('#animate-contact-sub-title').waypoint(() => {
         $('#animate-contact-sub-title').addClass('text-info');
         $('#animate-contact-sub-title').addClass('animated fadeInLeft');
     }, {offset: '80%'});
 
     let date = new Date().getFullYear()
-    console.info(".__________________________________.");
-    console.info("|"+date + " profmarcoshenrique.com v2.0.0|");
-    console.info("|    Developed by Victor Barreto   |");
-    console.info("| victor.eduardo.barreto@gmail.com |");
-    console.info(".__________________________________.");
+    console.log('%c .__________________________________.', 'color:cyan');
+    console.log('%c |' + date + ' profmarcoshenrique.com v2.1.0|', 'color:cyan');
+    console.log('%c |   Developed by Victor Barreto.   |', 'color:cyan');
+    console.log('%c | victor.eduardo.barreto@gmail.com |', 'color:cyan');
+    console.log('%c .__________________________________.', 'color:cyan');
 });
