@@ -24,7 +24,7 @@
     "gulp-serve": "^1.4.0",
     "gulp-stylus": "^2.7.0",
     "gulp-uglify": "^3.0.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jquery.nicescroll": "^3.7.6",
     "particlesjs": "^2.2.2",
     "waypoints": "^4.0.1"
